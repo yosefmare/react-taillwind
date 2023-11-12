@@ -1,10 +1,10 @@
 import { navigationLinksStyle } from '../../interfaces'
 import { FC } from 'react'
 
-const Buttons: FC<navigationLinksStyle> = ({ linkType , style  }): JSX.Element => {
+const Buttons: FC<navigationLinksStyle> = ({ linkType , style, display}): JSX.Element => {
     return (
         <>
-            <ul className="flex gap-5 ml-10 lg:flex-row sm: flex-col">
+            <ul className= {`${display}`}>
                 <li><a className={`${linkType} ${style}`} href="#">hero</a></li>
                 <li><a className={`${linkType} ${style}`} href="#">cards</a></li>
                 <li><a className={`${linkType} ${style}`} href="#">testimonials</a></li>

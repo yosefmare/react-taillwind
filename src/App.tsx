@@ -17,7 +17,7 @@ const App = (): JSX.Element => {
         <NavBarComponent />
         <div className=" lg:hidden sm:block my-3 sticky top-[100px]">
           <div className={`transition-div ${viability ? 'show' : 'hide'} `}>
-            <Buttons linkType="btn" style="btn-primary" />
+            <Buttons linkType="btn" style="btn-primary" display='nav-links-display sm:flex-col' />
           </div>
         </div>
         <HeroComponent />
@@ -25,7 +25,7 @@ const App = (): JSX.Element => {
           <CardComponent />
         </div>
         <TestimonialsComponent />
-        <Footer/>
+        <Footer />
       </navContext.Provider>
     </div>
   );

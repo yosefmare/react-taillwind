@@ -6,4 +6,5 @@ export interface navbarContextsTypes {
 export interface navigationLinksStyle {
     linkType?: string
     style?: string
+    display?: string
 }

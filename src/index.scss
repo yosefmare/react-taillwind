@@ -19,4 +19,8 @@
         active:bg-slate-600 text-gray-200
         focus:ring-slate-500
     }
+    .nav-links-display{
+        @apply flex gap-5 ml-10 lg:flex-row 
+        
+    }
 }
