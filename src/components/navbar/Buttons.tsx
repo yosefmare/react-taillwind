@@ -1,12 +1,14 @@
+import { navigationLinksStyle } from '../../interfaces'
+import { FC } from 'react'
 
-const Buttons = (): JSX.Element => {
+const Buttons: FC<navigationLinksStyle> = ({ linkType , style  }): JSX.Element => {
     return (
         <>
             <ul className="flex gap-5 ml-10 lg:flex-row sm: flex-col">
-                <li><a className="btn btn-primary" href="#">hero</a></li>
-                <li><a className="btn btn-primary" href="#">cards</a></li>
-                <li><a className="btn btn-primary" href="#">testimonials</a></li>
-                <li><a className="btn btn-primary" href="#">footer</a></li>
+                <li><a className={`${linkType} ${style}`} href="#">hero</a></li>
+                <li><a className={`${linkType} ${style}`} href="#">cards</a></li>
+                <li><a className={`${linkType} ${style}`} href="#">testimonials</a></li>
+                <li><a className={`${linkType} ${style}`} href="#">contact</a></li>
             </ul>
         </>
     )
